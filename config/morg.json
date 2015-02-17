@@ -13,8 +13,8 @@
    "DB" : {
       "url"      : "localhost",
       "name"     : "MorgDB",
-      "user"     : "Morg",
-      "password" : "gorM"
+      "user"     : "",
+      "password" : ""
    },
    "Server" : {
       "port"   : 3200,
