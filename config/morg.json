@@ -11,7 +11,7 @@
       }
    },
    "DB" : {
-      "url"      : "localhost"
+      "url"      : "localhost",
       "name"     : "MorgDB",
       "user"     : "Morg",
       "password" : "gorM"
