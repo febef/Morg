@@ -1,0 +1,6 @@
+#! /usr/bin/env node
+
+var Debug = require('debug')('Morg');
+var Morg  = require('../lib/morg');
+
+Morg.init();
