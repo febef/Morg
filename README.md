@@ -1,2 +1,2 @@
-# Morg ![Dependencies]
+# Morg
 Music organizer...
