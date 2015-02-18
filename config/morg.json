@@ -28,7 +28,7 @@
       "locales" : ["es"],
       "cookie"  : "langcookiei18n",
       "defaultLocale" : "es",
-      "directory" : "./langs"
+      "directory" : "/../../config/langs"
    },
    "morgan" : "dev"
 }
