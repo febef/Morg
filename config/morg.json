@@ -1,5 +1,4 @@
 
-
 {
 
    "git" : {
@@ -26,6 +25,10 @@
       }
    },
    "i18n" : {
+      "locales" : ["es"],
+      "cookie"  : "langcookiei18n",
+      "defaultLocale" : "es",
+      "directory" : "./langs"
    },
    "morgan" : "dev"
 }
