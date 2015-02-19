@@ -1,5 +1,6 @@
 {
 	"[MORG] Hola mundo!": "[MORG] Hola mundo!",
 	"Conexión a MongoDB establecida.": "Conexión a MongoDB establecida.",
-	"Hola mundo!": "Hola mundo!"
+	"Hola mundo!": "Hola mundo!",
+	"El server esta andando y escuchando en el puerto 3200": "El server esta andando y escuchando en el puerto 3200"
 }

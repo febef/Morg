@@ -1,11 +1,11 @@
 extends ../layout
 
 block content
-
-	link(rel='stylesheet', href='stylesheets/login.css')
-
-	span.label(style="color: #afafaf;") febef's tp01.
-	center
-		span.label.label-danger(style="font-size:26px;")= message
-		span.label.label-warning(style="font-size:26px;")= error.status
-	pre(style="background-color:#202020;color:#bbbbbb") #{error.stack}
+  center
+    br
+    span.label.label-danger(style="font-size:22px;")= message
+    | <span>   </span>
+    span.label.label-warning(style="font-size:22px;")= error.status
+  br
+  pre(style="background-color:#202020;color:#bbbbbb") #{error.stack}
+  script document.body.style.backgroundColor = "black";
