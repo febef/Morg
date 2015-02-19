@@ -15,7 +15,7 @@
       "user"     : "",
       "password" : ""
    },
-   "Server" : {
+   "server" : {
       "port"   : 3200,
       "domain" : "127.0.0.1",
       "session" : {
