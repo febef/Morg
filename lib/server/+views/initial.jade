@@ -9,31 +9,30 @@ head
   link(rel='stylesheet', href='/css/bootstrap-theme.min.css')
   link(rel='stylesheet', href='/css/style.css')
 body
-  div(class='header')
-    div
-      h1
-        b Morg
-      br
-      h3= panel
-    div(class='bottoms')
-      h2
-        a |^|
-        |    
-        a q
-        |    
-        a )>
-        |    
-        a +E
-    div(class='user')
-      h2
-        a -^-
-        |    
-        a (o)
-        |    
-        a #
-  div(class='info') hola mundo descargasss!!!!!
-  div(class='player') ( H  playing, title: "bla bla bla" |----->   | 00:00 / 02:21)
-  div(id='panel')
+  div(class='header navbar navbar-default navbar-static-top', role='navigation')
+    div(class='container')
+      div
+        div(class='nav navbar navbar-left logo')
+          b Morg
+        div(class='bottoms nav navbar', style=' position: absolute;width: 100%;left: 0;text-align: center; margin: auto;' )
+           a |^|
+           | ---
+           a q
+           | ---
+           a )>
+           | ---
+           a +E
+        div(class=' user navbar navbar-right')
+          a -^-
+          | --
+          a (o)
+          | --
+          a #
+      div(id='labelpanel', class='info labelpanel')= panel
+  div(id='infonet', class='navbar navbar-default infonet')
+  div(class='container')
+    div(id='player', class='player') ( H  playing, title: "bla bla bla" |----->   | 00:00 / 02:21)
+    div(id='panel')
   script(src='/js/jquery.min.js')
   script(src='/js/bootstrap.min.js')
   script(src='/js/core.js')

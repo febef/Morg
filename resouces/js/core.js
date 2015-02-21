@@ -1,6 +1,4 @@
 
-
-
 var core = {
    init : function() {
       $.get('/p', function(data) {
