@@ -1,6 +1,15 @@
-extends ../layout
 
-block content
+doctype
+head
+  meta(charset='uft-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  title= title
+  meta(name='description', content='')
+  meta(name='viewport', content='width=device-width,initial-scale=1')
+  link(rel='stylesheet', href='/css/bootstrap.min.css')
+  link(rel='stylesheet', href='/css/bootstrap-theme.min.css')
+  link(rel='stylesheet', href='/css/style.css')
+body(style="backgroundColor:black")
   center
     br
     span.label.label-danger(style="font-size:22px;")= message
@@ -8,4 +17,5 @@ block content
     span.label.label-warning(style="font-size:22px;")= error.status
   br
   pre(style="background-color:#202020;color:#bbbbbb") #{error.stack}
-  script document.body.style.backgroundColor = "black";
+  script(src='/js/jquery.min.js')
+  script(src='/js/bootstrap.min.js')
