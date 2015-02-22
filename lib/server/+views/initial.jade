@@ -22,17 +22,12 @@ body
            a )>
            | ---
            a +E
-        div(class=' user navbar navbar-right')
-          a -^-
-          | --
-          a (o)
-          | --
-          a #
+        div(id='user', class=' user navbar navbar-right')
       div(id='labelpanel', class='info labelpanel')= panel
   div(id='infonet', class='navbar navbar-default infonet')
   div(class='container')
-    div(id='player', class='player') ( H  playing, title: "bla bla bla" |----->   | 00:00 / 02:21)
-    div(id='panel')
+    div(id='player', class='player')
+    div(id='panel', class='panel')
   script(src='/js/jquery.min.js')
   script(src='/js/bootstrap.min.js')
   script(src='/js/core.js')
