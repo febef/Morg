@@ -4,6 +4,9 @@ var core = {
       $.get('/p', function(data) {
          $('#panel').html(data);
       });
+      $.get('/m/user', function(data) {
+         $('#user').html(data);
+      });
    }
 };
 
