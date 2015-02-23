@@ -2,3 +2,13 @@ center
   h3
     i Hola Mundo
     b  :)
+center
+  div.container
+    div.row
+      div#songs.col-xs-6
+        p canciones
+      div#lists.col-xs-6
+        p listas
+
+  script $.get('/m/list.songs', function(data) { $("#songs").html(data);});
+  script $.get('/m/list.lists', function(data) { $("#lists").html(data);});

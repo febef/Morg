@@ -1,0 +1,12 @@
+
+unless list.length > 0
+  span!= badmsj
+else
+  each item in list
+    div.item
+      img(src="#{item.cover}")
+      span.title= item.title
+      span.author= item.author
+      span.genere= item.genere
+      span.duration= item.duration
+

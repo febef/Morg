@@ -15,7 +15,7 @@ body
         div(class='nav navbar navbar-left logo')
           b Morg
         div(class='bottoms nav navbar', style=' position: absolute;width: 100%;left: 0;text-align: center; margin: auto;' )
-           a |^|
+           a(onclick="core.chPanel('inicio')") |^|
            | ---
            a q
            | ---
@@ -24,7 +24,7 @@ body
            a +E
         div(id='user', class=' user navbar navbar-right')
       div(id='labelpanel', class='info labelpanel')= panel
-  div(id='infonet', class='navbar navbar-default infonet')
+  div(id='downloadmanager', class='navbar navbar-default downloadmanager')
   div(class='container')
     div(id='player', class='player')
     div(id='panel', class='panel')
