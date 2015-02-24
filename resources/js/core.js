@@ -15,16 +15,20 @@ var core = {
       });
    },
    chPanel : function(panel) {
-      $.get('/p/'+panel, function(data) {
-         if (data=='ok') {
-            $("#labelpanel").html("loading...");
-            $.get('/p', function(data) {
-               $("#panel").html(data);
-               $("#labelpanel").html(panel);
-            });
-         }
-      });
-   }
+      if (!core.ischPanel)
+         core.ischPanel = true;
+         $.get('/p/'+panel, function(data) {
+            if (data=='ok') {
+               $("#labelpanel").html("loading...");
+               $.get('/p', function(data) {
+                  $("#panel").html(data);
+                  $("#labelpanel").html(panel);
+               });
+            core.ischPanel = false;
+            }
+         });
+   },
+   ischPanel : false
 };
 
 $(function() {

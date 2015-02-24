@@ -3,5 +3,8 @@
 	"Conexión a MongoDB establecida.": "Conexión a MongoDB establecida.",
 	"Hola mundo!": "Hola mundo!",
 	"El server esta andando y escuchando en el puerto 3200": "El server esta andando y escuchando en el puerto 3200",
-	"El server esta andando y escucha por el puerto 3200": "El server esta andando y escucha por el puerto 3200"
+	"El server esta andando y escucha por el puerto 3200": "El server esta andando y escucha por el puerto 3200",
+	"chPanel": "chPanel",
+	"inicio": "inicio",
+	"subirCancion": "subirCancion"
 }
