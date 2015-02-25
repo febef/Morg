@@ -6,5 +6,6 @@
 	"El server esta andando y escucha por el puerto 3200": "El server esta andando y escucha por el puerto 3200",
 	"chPanel": "chPanel",
 	"inicio": "inicio",
-	"subirCancion": "subirCancion"
+	"subirCancion": "subirCancion",
+	"recive file!": "recive file!"
 }

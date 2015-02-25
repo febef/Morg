@@ -1,8 +1,7 @@
 
 div
    center
-     b Subir Cancion!
-
+     h2 Subir cancion!
 div.container
   center
     div.row(style="width:50%")
@@ -10,5 +9,21 @@ div.container
         input(type="text", placeholder="titulo")
       div.col-xs-6
         input(type="text", placeholder="albun")
+    br
+    form(method='post', action='/s')
+      input#file(type="file")
+      input(type="submit")
 
+    hr
+    div.row
+      div.span12
+        div.progress.progress-striped.active.hide
+          div.bar(style='width: 0%')
+            div.row
+              div.span12
+                div.alert.hide
+                  button.close(type='button', data-dismiss='alert') x
+                   span
+                     strong.message
 
+script(src="/js/upfile.js")
