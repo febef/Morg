@@ -3,8 +3,6 @@
       $('strong.message').text(message);
       $('div.alert').show();
    };
-   
-
 
 
    function uf(evt) {
