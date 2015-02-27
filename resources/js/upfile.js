@@ -1,11 +1,13 @@
-$(function() {
    var showInfo = function(message) {
-      $('div.progress').hide();
+//      $('div.progress').hide();
       $('strong.message').text(message);
       $('div.alert').show();
    };
    
-   $('input[type="submit"]').on('click', function(evt) {
+
+
+
+   function uf(evt) {
       evt.preventDefault();
       $('div.progress').show();
       var formData = new FormData();
@@ -17,7 +19,8 @@ $(function() {
          if (e.lengthComputable) {
          var percentage = (e.loaded / e.total) * 100;
          $('div.progress div.bar').css('width', percentage + '%');
-      }
+ //  alert("A"+percentage);
+         }
    };
       xhr.onerror = function(e) {
          showInfo('An error occurred while submitting the form. Maybe your file is too big');
@@ -26,5 +29,4 @@ $(function() {
          showInfo(this.statusText);
       };
    xhr.send(formData);
-   });
-});
+   }

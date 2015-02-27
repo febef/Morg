@@ -12,18 +12,18 @@ div.container
     br
     form(method='post', action='/s')
       input#file(type="file")
-      input(type="submit")
+      input(id='s', type='button', onclick='uf(event);')
 
     hr
     div.row
       div.span12
-        div.progress.progress-striped.active.hide
-          div.bar(style='width: 0%')
-            div.row
-              div.span12
-                div.alert.hide
-                  button.close(type='button', data-dismiss='alert') x
-                   span
-                     strong.message
+        div.progress.progress-striped.active
+          div.progress-bar.progress-bar-success.progress-bar-striped.bar(style='width: 0%')
+    div.row
+      div.span12
+        div.alert.hide
+            button.close(type='button', data-dismiss='alert') x
+            span
+              strong.message
 
-script(src="/js/upfile.js")
+//script $.getScript("/js/upfile.js");
