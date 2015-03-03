@@ -19,9 +19,18 @@
       "port"   : 3200,
       "domain" : "127.0.0.1",
       "session" : {
-         "secret" : "sessionexpresssecret",
-         "resave" : true,
-         "saveUninitialized" : true
+         "options" : {
+            "secret"            : "sessionexpresssecret",
+            "resave"            : true,
+            "saveUninitialized" : true
+         },
+         "store" : {
+            "db"            : "express",
+            "host"          : "localhost",
+            "collection"    : "session",
+            "autoReconnect" :true,
+            "ttl"           : 14400
+         }
       }
    },
    "i18n" : {

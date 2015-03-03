@@ -4,15 +4,10 @@ div
      h2 Subir cancion!
 div.container
   center
-    div.row(style="width:50%")
-      div.col-xs-6
-        input(type="text", placeholder="titulo")
-      div.col-xs-6
-        input(type="text", placeholder="albun")
-    br
-    form(method='post', action='/s')
-      input#file(type="file")
-      input(id='s', type='button', onclick='uf(event);')
+    
+      form(method='post', action='/s')
+            input#file(type="file")
+            input(id='s', type='button', value="subir", onclick='uf(event);')
 
     hr
     div.row
