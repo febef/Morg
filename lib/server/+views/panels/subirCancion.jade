@@ -4,21 +4,18 @@ div
      h2 Subir cancion!
 div.container
   center
-    
-      form(method='post', action='/s')
-            input#file(type="file")
-            input(id='s', type='button', value="subir", onclick='uf(event);')
+    form#formupload(method='post', action='/s')
+      input#file(type="file")
+      input(id='s', type='button', value="subir", onclick='core.downloadmanager.uploadfile(event);')
 
-    hr
     div.row
       div.span12
         div.progress.progress-striped.active
           div.progress-bar.progress-bar-success.progress-bar-striped.bar(style='width: 0%')
     div.row
       div.span12
-        div.alert.hide
+        div.alert.alert-warning.hide
             button.close(type='button', data-dismiss='alert') x
             span
               strong.message
 
-//script $.getScript("/js/upfile.js");

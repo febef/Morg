@@ -11,24 +11,24 @@
    },
    "DB" : {
       "url"      : "localhost",
-      "name"     : "MorgDB",
+      "name"     : "Morg",
       "user"     : "",
       "password" : ""
    },
    "server" : {
-      "port"   : 3200,
-      "domain" : "127.0.0.1",
+      "port"    : 3200,
+      "domain"  : "127.0.0.1",
       "session" : {
          "options" : {
-            "secret"            : "sessionexpresssecret",
+            "secret"            : "MorgsaksSdf6dxwf65we5f6sdf",
             "resave"            : true,
             "saveUninitialized" : true
          },
-         "store" : {
-            "db"            : "express",
+         "store"   : {
+            "db"            : "Morg",
             "host"          : "localhost",
-            "collection"    : "session",
-            "autoReconnect" :true,
+            "collection"    : "server-sessions",
+            "autoReconnect" : true,
             "ttl"           : 14400
          }
       }

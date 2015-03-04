@@ -2,15 +2,16 @@ $(function() {
 
    core.downloadmanager = {
       showInfo : function(message) {
-//      $('div.progress').hide();
-      $('strong.message').text(message);
-      $('div.alert').show();
-
+         $('div.progress').hide();
+         $('strong.message').text(message);
+         $('div.alert').show();
+         $('#formupload').show();
       },
        uploadfile : function(evt) {
 
          evt.preventDefault();
          $('div.progress').show();
+         $('#formupload').hide();
 
          var formData = new FormData();
          var file = document.getElementById('file').files[0];
@@ -27,6 +28,16 @@ $(function() {
                $('div.progress div.bar').css('width', percentage + '%');
             }
          };
+
+         xhr.onerror = function(e) {
+            core.downloadmanager.showInfo('An error occurred while submitting the form. Maybe your file is too big');
+         };
+
+         xhr.onload = function() {
+            core.downloadmanager.showInfo(this.statusText);
+         };
+
+         xhr.send(formData);
       }
    };
 });
