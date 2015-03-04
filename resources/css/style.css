@@ -8,5 +8,6 @@
 }
 
 .downloadmanager {
-   min-height: 8px;
+   max-height: 4px;
+   min-height: 4px;
 }

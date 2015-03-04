@@ -1,21 +1,18 @@
 
 div
-   center
-     h2 Subir cancion!
-div.container
   center
+    h2 Subir cancion!
     form#formupload(method='post', action='/s')
       input#file(type="file")
-      input(id='s', type='button', value="subir", onclick='core.downloadmanager.uploadfile(event);')
-
+      #es.hide
+        hr
+        include ../modules/editsong
+        hr
+      br
+      input(type='button', value="subir", onclick='core.downloadmanager.uploadfile(event);')
     div.row
       div.span12
-        div.progress.progress-striped.active
+        div.progress.progress-striped.active.hide(style="width: 70%")
           div.progress-bar.progress-bar-success.progress-bar-striped.bar(style='width: 0%')
-    div.row
-      div.span12
-        div.alert.alert-warning.hide
-            button.close(type='button', data-dismiss='alert') x
-            span
-              strong.message
 
+script $("#file").change(function() {$("#es").toggleClass("hide");});

@@ -2,16 +2,14 @@ $(function() {
 
    core.downloadmanager = {
       showInfo : function(message) {
-         $('div.progress').hide();
-         $('strong.message').text(message);
-         $('div.alert').show();
-         $('#formupload').show();
+         core.hide('div.progress');
+         core.hide('#formupload');
       },
        uploadfile : function(evt) {
 
          evt.preventDefault();
-         $('div.progress').show();
-         $('#formupload').hide();
+         core.hide('div.progress');
+         core.hide('#formupload');
 
          var formData = new FormData();
          var file = document.getElementById('file').files[0];

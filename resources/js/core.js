@@ -14,6 +14,9 @@ var core = {
          $('#downloadmanager').html(data);
       });
    },
+   hide : function(selector) {
+      $(selector).toggleClass("hide");
+   },
    chPanel : function(panel) {
       if (!core.ischPanel)
          core.ischPanel = true;
