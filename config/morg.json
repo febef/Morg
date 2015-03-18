@@ -1,14 +1,5 @@
-
 {
-
-   "git" : {
-      "path" : "/home/morg/library",
-      "barerepo" : false,
-      "identity" : {
-         "user" : "",
-         "password" : ""
-      }
-   },
+   "libraryPath" : "/home/febef/.asd/3Music/Morg",
    "DB" : {
       "url"      : "localhost",
       "name"     : "Morg",

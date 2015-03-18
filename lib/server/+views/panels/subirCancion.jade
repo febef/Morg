@@ -3,16 +3,10 @@ div
   center
     h2 Subir cancion!
     form#formupload(method='post', action='/s')
-      input#file(type="file", accept='audio/*')
-      #es.hide
-        hr
-        include ../modules/editsong
-        hr
+      input#file(type="file", accept='audio/*', multiple)
       br
-      input(type='button', accept='audio/mp3', value="subir", onclick='core.downloadmanager.uploadfile(event);')
+      input(type='button', accept='audio/mp3', value="subir", onclick='core.netmanager.uploadfile(event);')
     div.row
       div.span12
         div.progress.progress-striped.active.hide(style="width: 70%")
           div.progress-bar.progress-bar-success.progress-bar-striped.bar(style='width: 0%')
-
-script $("#file").change(function() {$("#es").toggleClass("hide");});

@@ -1,6 +1,6 @@
 $(function() {
 
-   core.downloadmanager = {
+   core.netmanager = {
       showInfo : function(message) {
          core.hide('div.progress');
          core.hide('#formupload');

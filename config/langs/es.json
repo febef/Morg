@@ -8,5 +8,8 @@
 	"inicio": "inicio",
 	"subirCancion": "subirCancion",
 	"recive file!": "recive file!",
-	"receive file!": "receive file!"
+	"receive file!": "receive file!",
+	"Cargando modulo: 03DataBase.js": "Cargando modulo: 03DataBase.js",
+	"Cargando modulo: 05Morg.js": "Cargando modulo: 05Morg.js",
+	"Cargando modulo: 10Server.js": "Cargando modulo: 10Server.js"
 }
